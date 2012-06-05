@@ -6,7 +6,9 @@ module SessionsHelper
   end
 
   def signed_in?
+# the following evaluation always returns true.
     !current_user.nil?
+#    flash[:notice] = current_user.name
   end
 
   def current_user=(user)
