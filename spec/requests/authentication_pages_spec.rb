@@ -117,7 +117,7 @@ describe "Authentication" do
 
     describe "as non-admin user" do
       let(:user) { FactoryGirl.create(:user) }
-      let(:non_admin) {i FactoryGirl.create(:user) }
+      let(:non_admin) { FactoryGirl.create(:user) }
 
       before { sign_in non_admin }
 
